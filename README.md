@@ -84,9 +84,9 @@
 
 ---
 
-## Country-Level Demand — India 🇮🇳 | UK 🇬🇧 | USA 🇺🇸 | UAE 🇦🇪
+## Country-Level Demand — India | UK | USA | UAE
 
-### 🇮🇳 India
+### India
 *Asia-Pacific's fastest-growing CRM market. Buying drivers: cost sensitivity, GST-compliant invoicing, Indian-language & data-residency support. India = Zoho's #2 country market (16.3–16.7% of its tracked customer base).*
 
 | Rank | CRM | Why It's in Demand |
@@ -98,7 +98,7 @@
 | 5 | **Pipedrive** | Small outbound-sales teams |
 | 6 | **LeadSquared** | India-built; strong in ed-tech & BFSI vertical sales |
 
-### 🇬🇧 UK
+### UK
 *~£2.9B market (2025). Drivers: GDPR compliance, UK/EU data residency, Xero/Sage accounting integration. UK = Zoho's #3 country market (7.6–7.9%).*
 
 | Rank | CRM | Why It's in Demand |
@@ -109,7 +109,7 @@
 | 4 | **Zoho CRM** | UK SMEs on cost grounds |
 | 5 | **Pipedrive** | SMB sales teams |
 
-### 🇺🇸 USA
+### USA
 *Largest CRM market in the world (~$22.2B of ~$39.2B North American total). 60.15% of tracked CRM-using companies globally are US-based (389,304 of ~825,000 in 6sense's dataset). Home to Salesforce, HubSpot, Microsoft, Oracle HQ.*
 
 | Rank | CRM | Why It's in Demand |
@@ -122,7 +122,7 @@
 | 6 | **Oracle & SAP** | Large enterprises on matching ERP stacks |
 | 7 | **monday CRM & Freshsales** | Fast-growing lightweight alternatives |
 
-### 🇦🇪 UAE
+### UAE
 *Smallest of the four markets but growing 10%+ annually (2025–2029), driven by Dubai/Abu Dhabi digital-economy initiatives. Decisive local needs: VAT/FTA e-invoicing, Arabic (RTL) support, WhatsApp integration.*
 
 | Rank | CRM | Why It's in Demand |
