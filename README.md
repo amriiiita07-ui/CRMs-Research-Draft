@@ -8,6 +8,8 @@
 [![Data Policy](https://img.shields.io/badge/data-100%25_sourced-16A085)](https://cr-ms-research-draft.vercel.app/)
 [![Markets Covered](https://img.shields.io/badge/markets-🇮🇳_🇬🇧_🇺🇸_🇦🇪-E8A33D)](https://cr-ms-research-draft.vercel.app/)
 
+<br/>
+
 ---
 
 ## Headline Findings
