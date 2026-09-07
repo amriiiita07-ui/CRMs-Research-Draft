@@ -26,7 +26,7 @@
 | Most-reviewed CRM on G2 | **Salesforce — 4.5★ / 97,201 reviews** | G2 (2026) |
 | Highest-rated major CRM | **monday CRM — 4.6★** | G2 (2026) |
 
-![Global CRM Market Growth](readme-assets/chart1_market_growth.png)
+![Global CRM Market Growth](https://github.com/amriiiita07-ui/CRMs-Research-Draft/blob/main/Charts%20%26%20Graphs/chart1_market_growth.png)
 
 ---
 
@@ -42,13 +42,13 @@
 
 *APAC & LatAm splits estimated from the reported remainder. Sources: Fortune Business Insights, Mordor Intelligence.*
 
-![Regional Split](readme-assets/chart5_regions.png)
+![Regional Split](https://github.com/amriiiita07-ui/CRMs-Research-Draft/blob/main/Charts%20%26%20Graphs/chart5_regions.png)
 
 ---
 
 ## Who Owns the Market — Global Vendor Share
 
-![Vendor Share](readme-assets/chart2_vendor_share.png)
+![Vendor Share](https://github.com/amriiiita07-ui/CRMs-Research-Draft/blob/main/Charts%20%26%20Graphs/chart2_vendor_share.png)
 
 | Rank | Vendor | Share | Key Proof Point |
 |---|---|---|---|
@@ -81,11 +81,11 @@
 
 ### Ratings — Score vs. Proof (verified review volume)
 
-![Ratings](readme-assets/chart3_ratings.png)
+![Ratings](https://github.com/amriiiita07-ui/CRMs-Research-Draft/blob/main/Charts%20%26%20Graphs/chart3_ratings.png)
 
 ### Entry Pricing Landscape
 
-![Pricing](readme-assets/chart4_pricing.png)
+![Pricing](https://github.com/amriiiita07-ui/CRMs-Research-Draft/blob/main/Charts%20%26%20Graphs/chart4_pricing.png)
 
 ---
 
