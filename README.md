@@ -1,4 +1,4 @@
-# 🌐 Global CRM Market Research Report 2026
+# Global CRM Market Research Report 2026
 
 > A fully-sourced competitive research report on the **Customer Relationship Management (CRM) software industry**, covering the **Top 10 CRM platforms**, **market analytics**, and **country-level demand in India, UK, USA & UAE** — built with 100% real-world data. Every figure traces to a named public source: Gartner, IDC, Fortune Business Insights, G2, Capterra, company filings (10-Ks), and official vendor pages.
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Headline Findings
+## Headline Findings
 
 | Metric | Value | Source |
 |---|---|---|
@@ -25,7 +25,7 @@
 
 ---
 
-## 🗺️ Regional Market Split (2026)
+## Regional Market Split (2026)
 
 | Region | 2026 Size | Global Share | Growth Character |
 |---|---|---|---|
@@ -41,7 +41,7 @@
 
 ---
 
-## 🏆 Who Owns the Market — Global Vendor Share
+## Who Owns the Market — Global Vendor Share
 
 ![Vendor Share](readme-assets/chart2_vendor_share.png)
 
@@ -57,7 +57,7 @@
 
 ---
 
-## 📊 Top 10 CRM Platforms — Competitive Profiles
+## Top 10 CRM Platforms — Competitive Profiles
 
 ### Master Comparison Table
 
@@ -84,7 +84,7 @@
 
 ---
 
-## 🌍 Country-Level Demand — India 🇮🇳 | UK 🇬🇧 | USA 🇺🇸 | UAE 🇦🇪
+## Country-Level Demand — India 🇮🇳 | UK 🇬🇧 | USA 🇺🇸 | UAE 🇦🇪
 
 ### 🇮🇳 India
 *Asia-Pacific's fastest-growing CRM market. Buying drivers: cost sensitivity, GST-compliant invoicing, Indian-language & data-residency support. India = Zoho's #2 country market (16.3–16.7% of its tracked customer base).*
@@ -138,7 +138,7 @@
 
 ---
 
-## 💡 Why Companies Need CRM — The Quantified Case
+## Why Companies Need CRM — The Quantified Case
 
 | Benefit | Reported Impact | Type |
 |---|---|---|
@@ -155,7 +155,7 @@
 
 ---
 
-## 🔍 Methodology & Data Integrity
+## Methodology & Data Integrity
 
 This report follows a strict **"zero assumed facts"** policy:
 
@@ -165,7 +165,7 @@ This report follows a strict **"zero assumed facts"** policy:
 4. **Ranges beat false precision** — where trackers report ranges (e.g., Salesforce 20.0–20.7%), ranges are shown.
 5. **Directional vs. exact labeling** — synthesized demand rankings (e.g., country-level charts) are explicitly labeled as directional, not precise market-share percentages.
 
-## 📚 Sources & References (selected — 30+ total)
+## Sources & References (selected — 30+ total)
 
 | Source | Used For |
 |---|---|
@@ -179,11 +179,11 @@ This report follows a strict **"zero assumed facts"** policy:
 | Regional: unstopgrowth.com, viewpointanalysis.com, maximizer.com, azdan.com, skimbox.co, gulfalts.com | India / UK / UAE demand data |
 | marketresearchfuture.com, sellerscommerce.com, wavecnct.com | MEA growth & CRM statistics |
 
-👉 **Full linked reference list:** [Live Report → Section 6](https://cr-ms-research-draft.vercel.app/)
+**Full linked reference list:** [Live Report → Section 6](https://cr-ms-research-draft.vercel.app/)
 
 ---
 
-## 🛠️ Tech Stack & Repository
+## Tech Stack & Repository
 
 ```
 CRMs-Research-Draft/
