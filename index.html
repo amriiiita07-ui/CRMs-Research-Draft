@@ -1,0 +1,599 @@
+
+
+Crm report fixed · HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Global CRM Market Research Report 2026 — India, UK, USA & UAE</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+  :root{
+    --navy:#0f2c4c;
+    --navy-light:#1e4470;
+    --teal:#0d9488;
+    --teal-light:#5eead4;
+    --bg:#f7f9fb;
+    --card:#ffffff;
+    --text:#1f2937;
+    --muted:#5b6b7c;
+    --border:#e2e8f0;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; padding:0;
+    font-family:'Segoe UI', Arial, Helvetica, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px 60px;}
+  header.hero{
+    background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color:#fff; padding:56px 24px 40px; text-align:center;
+  }
+  header.hero h1{font-size:2rem; margin:0 0 8px; font-weight:700;}
+  header.hero p{margin:4px 0; color:#cbd8e6; font-size:1rem;}
+  header.hero .badge{
+    display:inline-block; background:var(--teal); color:#fff; padding:4px 14px;
+    border-radius:20px; font-size:0.8rem; margin-top:14px; letter-spacing:.5px;
+  }
+  section{margin-top:46px;}
+  h2{
+    color:var(--navy); font-size:1.5rem; border-left:6px solid var(--teal);
+    padding-left:14px; margin-bottom:6px;
+  }
+  h3{color:var(--navy); font-size:1.15rem; margin-top:28px;}
+  .subtitle{color:var(--muted); font-size:0.95rem; margin:0 0 20px 20px;}
+  p{margin:10px 0;}
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:12px;
+    padding:22px 24px; box-shadow:0 1px 3px rgba(15,44,76,0.06); margin-bottom:22px;
+  }
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+  .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  @media(max-width:800px){.grid2,.grid3{grid-template-columns:1fr;}}
+  .stat{
+    background:var(--card); border:1px solid var(--border); border-radius:12px;
+    padding:18px; text-align:center;
+  }
+  .stat .num{font-size:1.6rem; font-weight:700; color:var(--teal);}
+  .stat .lbl{font-size:0.82rem; color:var(--muted); margin-top:4px;}
+  table{width:100%; border-collapse:collapse; font-size:0.88rem; background:#fff;}
+  th{
+    background:var(--navy); color:#fff; text-align:left; padding:10px 12px;
+    font-size:0.8rem; text-transform:uppercase; letter-spacing:.4px;
+  }
+  td{padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top;}
+  tr:nth-child(even) td{background:#f4f7fa;}
+ 
+  /* --- FIX: give every chart a fixed-size, non-shrinking box --- */
+  .chart-box{
+    background:#fff; border:1px solid var(--border); border-radius:12px;
+    padding:18px; margin:18px 0;
+    position:relative;          /* anchors the canvas so it can't cascade-resize */
+    height:380px;                /* fixed height stops the shrink loop */
+    width:100%;
+    overflow:hidden;
+  }
+  .chart-box canvas{
+    position:absolute;
+    top:18px; left:18px; right:18px; bottom:18px;
+    width:calc(100% - 36px) !important;
+    height:calc(100% - 36px) !important;
+  }
+  @media(max-width:600px){
+    .chart-box{height:320px;}
+  }
+  /* --- end fix --- */
+ 
+  .tag{
+    display:inline-block; background:#e6f6f4; color:var(--teal); font-size:0.72rem;
+    padding:2px 8px; border-radius:10px; font-weight:600; margin-right:4px;
+  }
+  .rank{
+    display:inline-flex; align-items:center; justify-content:center;
+    background:var(--teal); color:#fff; width:26px; height:26px; border-radius:50%;
+    font-weight:700; font-size:0.8rem; margin-right:8px;
+  }
+  .src{font-size:0.78rem; color:var(--muted);}
+  a{color:var(--teal-light) ;}
+  .card a{color:#0d7d73; text-decoration:none; border-bottom:1px dotted #0d7d73;}
+  footer{
+    margin-top:60px; padding:26px 24px; background:var(--navy); color:#cbd8e6;
+    text-align:center; font-size:0.85rem;
+  }
+  ul{margin:8px 0; padding-left:22px;}
+  li{margin-bottom:4px;}
+  .note{
+    background:#fff8ec; border:1px solid #f2ddb0; border-radius:8px; padding:12px 16px;
+    font-size:0.85rem; color:#7a5b12; margin:14px 0;
+  }
+  .country-header{
+    display:flex; align-items:center; gap:10px; margin-top:10px;
+  }
+  .flag{font-size:1.6rem;}
+  .refs{font-size:0.85rem;}
+  .refs li{margin-bottom:6px; word-break:break-all;}
+</style>
+</head>
+<body>
+ 
+<header class="hero">
+  <h1>The Global CRM Landscape 2026</h1>
+  <p>A data-backed study of the Top 10 CRM platforms, market economics, and country-level demand across India, the UK, the USA &amp; the UAE</p>
+  <div class="badge">SOURCED FROM GARTNER · IDC · G2 · CAPTERRA · COMPANY FILINGS · FORTUNE BUSINESS INSIGHTS</div>
+</header>
+ 
+<div class="wrap">
+ 
+<section>
+  <p style="margin-top:28px;">This report compiles publicly available data — analyst market-share trackers (Gartner, IDC), verified review-platform ratings (G2, Capterra), and company disclosures (10-Ks, press releases, official "About" pages) — on the CRM (Customer Relationship Management) software industry. Every figure below is followed by its source. Where analyst firms disagree (which happens often in this market — see the note in Section 1), both figures are shown rather than picking one arbitrarily.</p>
+</section>
+ 
+<!-- SECTION 1: MARKET OVERVIEW -->
+<section>
+  <h2>1. Global CRM Market — Size &amp; Growth</h2>
+  <p class="subtitle">How big is the CRM industry, and how fast is it growing?</p>
+ 
+  <div class="grid3">
+    <div class="stat"><div class="num">$112.9B</div><div class="lbl">Global CRM market, 2025</div></div>
+    <div class="stat"><div class="num">$126.2B</div><div class="lbl">Projected market, 2026</div></div>
+    <div class="stat"><div class="num">12.4%</div><div class="lbl">CAGR through 2034</div></div>
+  </div>
+ 
+  <div class="chart-box">
+    <canvas id="marketGrowthChart"></canvas>
+  </div>
+  <p class="src">Source: Fortune Business Insights, "Customer Relationship Management (CRM) Market" report (2026) — fortunebusinessinsights.com/customer-relationship-management-crm-market-103418</p>
+ 
+  <div class="note">
+    <strong>Why the numbers differ across sources:</strong> Gartner sizes the CRM software market at ~$128B for 2024 (13.4% growth), while Fortune Business Insights puts 2024 at $101.4B. The gap is mostly definitional — some trackers fold marketing-automation and customer-experience software into "CRM," others don't. This report uses Fortune Business Insights as the primary series for consistency, and IDC/Gartner for vendor-level market share (Section 2), since those are the analyst firms that track individual vendor revenue.
+  </div>
+ 
+  <h3>Regional split (2026)</h3>
+  <div class="chart-box">
+    <canvas id="regionChart"></canvas>
+  </div>
+  <p class="src">Source: Fortune Business Insights &amp; Mordor Intelligence regional breakdowns, compiled by Wave Connect / Companieshistory.com CRM statistics roundups (2026).</p>
+ 
+  <ul>
+    <li><strong>North America</strong> leads with ~31.7% global share (~$39.15B in 2026); the U.S. alone accounts for roughly $22.19B of that.</li>
+    <li><strong>Asia-Pacific</strong> is the fastest-growing region, driven by digital-transformation spending in India, China and Southeast Asia — now roughly on par with Europe in absolute size.</li>
+    <li><strong>Europe</strong> (including the UK) contributes roughly $28.5B, with the UK and Germany as the strongest sub-markets.</li>
+    <li><strong>Middle East &amp; Africa</strong> (including the UAE) is the smallest region at ~5% of the global market, but is growing at 10%+ annually — among the fastest of any region — driven by UAE and Saudi digital-economy initiatives.</li>
+  </ul>
+</section>
+ 
+<!-- SECTION 2: VENDOR MARKET SHARE -->
+<section>
+  <h2>2. Who Owns the Market — Global Vendor Share</h2>
+  <p class="subtitle">Based on IDC's Worldwide Semiannual Software Tracker and Gartner's CRM market-share analyses</p>
+ 
+  <div class="chart-box">
+    <canvas id="vendorShareChart"></canvas>
+  </div>
+  <p class="src">Source: IDC Worldwide Semiannual Software Tracker (2025 data, as reported by CX Foundation/technologychecker.io); Gartner "Market Share: Customer Experience and Relationship Management, Worldwide, 2024" (gartner.com/en/documents/6582102)</p>
+ 
+  <p><strong>Salesforce has held the #1 spot for 13 consecutive years</strong> (IDC), with ~20.0–20.7% share and more revenue than its next four competitors combined — though its share has edged down slightly each of the last four years as the market fragments and smaller/vertical CRMs gain ground. HubSpot is the fastest-growing large vendor by customer count (up 16% year-over-year to 299,458 paying customers by Q1 2026), while Zoho — not separately tracked by IDC's named-vendor rankings — reports 1 million+ paying customers and 150 million total users as of February 2026 on its 30th anniversary.</p>
+</section>
+ 
+<!-- SECTION 3: TOP 10 CRM DEEP DIVE -->
+<section>
+  <h2>3. Top 10 CRM Platforms — Full Competitive Profile</h2>
+  <p class="subtitle">Founding story, structure, ease of use, ratings, customers, and pricing for each major competitor</p>
+ 
+  <div class="chart-box">
+    <canvas id="g2RatingChart"></canvas>
+  </div>
+  <p class="src">Source: G2.com verified review pages for each product (ratings pulled 2026); Capterra where G2 data was unavailable.</p>
+ 
+  <div class="chart-box">
+    <canvas id="entryPriceChart"></canvas>
+  </div>
+  <p class="src">Source: Vendor pricing pages and G2/SelectHub/SpotSaaS pricing comparison pages, per-user/per-month USD, entry-level paid tier (2026).</p>
+ 
+  <h3><span class="rank">1</span>Salesforce — Sales Cloud</h3>
+  <table>
+    <tr><th>Founded</th><td>March 1999, San Francisco, USA</td></tr>
+    <tr><th>Founders</th><td>Marc Benioff, Parker Harris, Dave Moellenhoff, Frank Dominguez</td></tr>
+    <tr><th>Founding idea</th><td>Deliver CRM as a browser-based, subscription "no software" service — eliminating the cost and complexity of installed enterprise CRM. Early seed capital included $6M of Benioff's own money and investment from Oracle's Larry Ellison.</td></tr>
+    <tr><th>Ease of use</th><td>Powerful but has a real learning curve; heavy customization (AppExchange, 5,000+ apps) usually needs admin/developer support for mid-size and larger deployments.</td></tr>
+    <tr><th>Customers</th><td>150,000+ companies; 83% of the Fortune 500 use Salesforce</td></tr>
+    <tr><th>G2 rating</th><td>4.5 / 5 — 97,201 verified reviews (largest review base of any CRM)</td></tr>
+    <tr><th>Entry pricing</th><td>Starter Suite ≈ $25/user/month; Sales Cloud Enterprise ≈ $165–175/user/month</td></tr>
+    <tr><th>Global market share</th><td>~20.0–20.7% — #1 for 13 straight years (IDC)</td></tr>
+    <tr><th>FY2026 revenue</th><td>$41.5 billion (+10% YoY)</td></tr>
+  </table>
+ 
+  <h3><span class="rank">2</span>HubSpot — Smart CRM / Marketing Hub</h3>
+  <table>
+    <tr><th>Founded</th><td>June 2006, Cambridge, Massachusetts, USA</td></tr>
+    <tr><th>Founders</th><td>Brian Halligan and Dharmesh Shah (met as MIT graduate students)</td></tr>
+    <tr><th>Founding idea</th><td>"Inbound marketing" — attract customers with useful content and search/social presence instead of interruptive outbound ads and cold calls; the CRM was built free as the on-ramp to a broader marketing/sales/service suite.</td></tr>
+    <tr><th>Ease of use</th><td>Consistently rated easiest-to-adopt CRM among SMB/mid-market buyers; clean UI is its signature differentiator versus Salesforce.</td></tr>
+    <tr><th>Customers</th><td>299,458 paying customers as of Q1 2026 (up 16% YoY), across 120+ countries</td></tr>
+    <tr><th>G2 rating</th><td>4.4 / 5 for Sales Hub (12,000+ reviews); named G2's #1 Global Software Company overall in 2025</td></tr>
+    <tr><th>Entry pricing</th><td>Free forever CRM; Starter ≈ $20/seat/month; Professional ≈ $890/month; Enterprise ≈ $3,600/month (Marketing Hub tiers)</td></tr>
+    <tr><th>2025 revenue</th><td>$3.13 billion (+19% YoY)</td></tr>
+  </table>
+ 
+  <h3><span class="rank">3</span>Zoho CRM</h3>
+  <table>
+    <tr><th>Founded</th><td>1996 as AdventNet (renamed Zoho Corporation in 2009); Zoho CRM launched 2005. Headquartered in Chennai, India</td></tr>
+    <tr><th>Founders</th><td>Sridhar Vembu and Tony Thomas (Vembu: IIT Madras graduate, PhD Princeton)</td></tr>
+    <tr><th>Founding idea</th><td>A fully bootstrapped (zero venture capital) suite of affordable business software for small and mid-size companies, with heavy reinvestment in rural India R&amp;D centers rather than Silicon Valley-style fundraising.</td></tr>
+    <tr><th>Ease of use</th><td>G2 reviewers score it highly (8.3/10) on ease of use for small businesses; interface is functional rather than polished, and very deep (40+ integrated apps in the "Zoho One" bundle) which can add complexity at scale.</td></tr>
+    <tr><th>Customers</th><td>1 million+ paying customers and 150 million users worldwide (reached Feb 2026, 30th anniversary); ~19,000 employees across 90+ offices in 28 countries</td></tr>
+    <tr><th>G2 rating</th><td>4.1 / 5 — roughly 2,850–2,930 reviews</td></tr>
+    <tr><th>Entry pricing</th><td>Free (up to 3 users); India pricing: Standard ₹800, Professional ₹1,400, Enterprise ₹2,400, Ultimate ₹2,600 per user/month (ex-GST, annual billing)</td></tr>
+    <tr><th>2026 revenue (est.)</th><td>~$2 billion (up from $1.4B in 2024); parent Zoho Corp FY25 revenue ₹13,543 crore (~$1.62B)</td></tr>
+  </table>
+ 
+  <h3><span class="rank">4</span>Microsoft Dynamics 365 Sales</h3>
+  <table>
+    <tr><th>Founded</th><td>Microsoft: 1975 (Bill Gates &amp; Paul Allen), Redmond, USA. The CRM product line (Microsoft Dynamics CRM) launched in 2003</td></tr>
+    <tr><th>Founding idea (of the product)</th><td>Give enterprises a CRM natively wired into the tools their staff already use daily — Outlook, Excel, Teams, and the wider Microsoft 365 ecosystem — reducing the switching cost of adopting a separate CRM.</td></tr>
+    <tr><th>Ease of use</th><td>G2 users score ease-of-use at 7.4/10 — lower than most rivals; steep learning curve, but strong in customization without code and deep enterprise workflow features.</td></tr>
+    <tr><th>Adoption pattern</th><td>68% of Dynamics customers adopt it because they are already Microsoft 365 subscribers (Gartner) — bundling, not standalone demand, drives much of its growth</td></tr>
+    <tr><th>G2 rating</th><td>3.8 / 5 — roughly 1,600–1,620 reviews (Dynamics 365 Sales)</td></tr>
+    <tr><th>Entry pricing</th><td>≈ $65–$70/user/month (Professional); Enterprise tiers run $95–$210/user/month depending on modules</td></tr>
+    <tr><th>Global market share</th><td>~5.9% — the #2 vendor behind Salesforce (IDC/Gartner)</td></tr>
+  </table>
+ 
+  <h3><span class="rank">5</span>SAP (Sales Cloud / Customer Experience suite)</h3>
+  <table>
+    <tr><th>Founded</th><td>SAP SE: 1972, Walldorf, Germany</td></tr>
+    <tr><th>Founders</th><td>Dietmar Hopp, Klaus Tschira, Hasso Plattner, Claus Wellenreuther, Hans-Werner Hector (five former IBM engineers)</td></tr>
+    <tr><th>Founding idea</th><td>Standardized enterprise business software (originally ERP) that could run a company's core processes on one integrated system — CRM was added as SAP expanded into full "customer experience" coverage tied to its ERP backbone.</td></tr>
+    <tr><th>Best fit</th><td>Large enterprises, especially those already running SAP ERP, that want CRM and back-office finance/supply-chain data unified in one system.</td></tr>
+    <tr><th>Global market share</th><td>~3.5–4.8% of the CRM market (estimates vary by tracker)</td></tr>
+    <tr><th>Top product</th><td>SAP Sales Cloud / SAP Customer Experience (SAP CX)</td></tr>
+  </table>
+ 
+  <h3><span class="rank">6</span>Oracle (Fusion CX / Oracle Sales)</h3>
+  <table>
+    <tr><th>Founded</th><td>Oracle Corporation: 1977, Santa Clara, California, USA</td></tr>
+    <tr><th>Founders</th><td>Larry Ellison, Bob Miner, Ed Oates</td></tr>
+    <tr><th>Founding idea</th><td>Commercialize the relational database — Oracle's CRM heritage traces to its 2006 acquisition of Siebel Systems, then the market's CRM leader, which Oracle has since folded into its cloud "Fusion" applications.</td></tr>
+    <tr><th>Best fit</th><td>Large enterprises needing AI-driven sales/marketing/service agents tightly integrated with Oracle's cloud infrastructure and databases.</td></tr>
+    <tr><th>Global market share</th><td>~4.4% of the CRM market (IDC/Gartner)</td></tr>
+    <tr><th>Top product</th><td>Oracle Fusion Cloud CX / Oracle Sales, plus the AI Agent Studio for building custom sales/service agents</td></tr>
+  </table>
+ 
+  <h3><span class="rank">7</span>Pipedrive</h3>
+  <table>
+    <tr><th>Founded</th><td>June 21, 2010, Tallinn, Estonia</td></tr>
+    <tr><th>Founders</th><td>Timo Rein, Urmas Purde, Ragnar Sass, Martin Henk, Martin Tajur — all former salespeople</td></tr>
+    <tr><th>Founding idea</th><td>A reaction against existing CRMs (one had cost the founders over $25,000) that they felt were built for management reporting, not for salespeople actually closing deals — Pipedrive was designed around a visual, drag-and-drop sales pipeline instead.</td></tr>
+    <tr><th>Ease of use</th><td>Consistently rated among the easiest CRMs to learn; G2 ease-of-use scores of 8.7–8.8/10 in head-to-head comparisons</td></tr>
+    <tr><th>Ownership</th><td>Majority acquired by Vista Equity Partners in 2020 at a ~$1.5B valuation (Estonia's second-biggest tech exit after Skype)</td></tr>
+    <tr><th>Customers</th><td>100,000+ companies across 170+ countries</td></tr>
+    <tr><th>G2 rating</th><td>Ranked #6 in G2's "Best Sales Software Products 2026" list; typically 4.5–4.7/5 in head-to-head comparisons (3,000+ reviews)</td></tr>
+    <tr><th>Entry pricing</th><td>From $14/user/month (Essential/Lite tier); top tier ("Power"/"Ultimate") around $99/user/month</td></tr>
+  </table>
+ 
+  <h3><span class="rank">8</span>Freshsales (Freshworks CRM)</h3>
+  <table>
+    <tr><th>Founded</th><td>Freshworks: October 13, 2010, Chennai, India (launched as "Freshdesk," rebranded Freshworks in 2017)</td></tr>
+    <tr><th>Founders</th><td>Girish Mathrubootham and Shan Krishnasamy — both former Zoho executives</td></tr>
+    <tr><th>Founding idea</th><td>Fix bloated, unfriendly customer-support and sales software; started from a single frustrated forum comment about broken helpdesk tools, and grew into a full CRM/ITSM suite built around ease of use.</td></tr>
+    <tr><th>Customers</th><td>~68,000–75,000 organizations globally (company-reported, 2025)</td></tr>
+    <tr><th>G2 rating</th><td>4.5 / 5 for Freshsales — roughly 1,234 reviews</td></tr>
+    <tr><th>Entry pricing</th><td>Free tier available; paid plans typically run from roughly $9–15/user/month up to $59+/user/month for advanced/enterprise tiers</td></tr>
+    <tr><th>2025 revenue</th><td>$838.8 million (public company, Nasdaq: FRSH)</td></tr>
+  </table>
+ 
+  <h3><span class="rank">9</span>monday CRM (monday.com)</h3>
+  <table>
+    <tr><th>Founded</th><td>February 2012 as "dapulse," Tel Aviv, Israel; renamed monday.com in 2017</td></tr>
+    <tr><th>Founders</th><td>Roy Mann and Eran Zinman — the idea originated from scaling pains Mann experienced as a technology leader at Wix</td></tr>
+    <tr><th>Founding idea</th><td>Build a flexible, visually appealing "Work OS" that teams would genuinely enjoy using, unlike the rigid or overly complex tools they'd tried before; CRM emerged later as one specialized module (monday Sales CRM) on top of the same visual, no-code platform.</td></tr>
+    <tr><th>Customers</th><td>152,000+ organizations reported using monday.com for CRM/contact-management workflows specifically; 245,000+ customers for monday.com overall</td></tr>
+    <tr><th>G2 rating</th><td>monday Sales CRM: 4.6/5 (1,136 reviews); monday.com overall: 4.7/5 (18,961 reviews) — one of the highest-rated vendors in this report</td></tr>
+    <tr><th>Entry pricing</th><td>From roughly $12–$24/seat/month for CRM-specific tiers</td></tr>
+    <tr><th>2025 revenue</th><td>$1.23 billion (public company, Nasdaq: MNDY)</td></tr>
+  </table>
+ 
+  <h3><span class="rank">10</span>Zendesk (Sell + Support suite)</h3>
+  <table>
+    <tr><th>Founded</th><td>2007, Copenhagen, Denmark (later headquartered in San Francisco)</td></tr>
+    <tr><th>Founders</th><td>Mikkel Svane, Alexander Aghassipour, Morten Primdahl</td></tr>
+    <tr><th>Founding idea</th><td>One of the first purpose-built, pure cloud helpdesk platforms; Zendesk Sell (the CRM/sales module, originally "Base CRM") was acquired in 2018 to extend the platform from support into full customer-relationship coverage.</td></tr>
+    <tr><th>Customers</th><td>130,000+ global brands use the Zendesk platform (2026, company-reported)</td></tr>
+    <tr><th>G2 rating</th><td>Zendesk's Customer Service product carries 6,800+ G2 reviews with generally strong satisfaction on automation and omnichannel ticketing; pricing runs $19–$115+ per agent/month depending on tier</td></tr>
+    <tr><th>Best fit</th><td>Companies whose primary need is customer support/service at scale, who also want a lighter sales-CRM layer (Sell) in the same platform, rather than a sales-first CRM</td></tr>
+  </table>
+</section>
+ 
+<!-- SECTION 4: WHY COMPANIES NEED CRM -->
+<section>
+  <h2>4. Why Companies Need CRM — Benefits for Businesses &amp; Customers</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3 style="margin-top:0;">Benefits companies gain</h3>
+      <ul>
+        <li><strong>Measurable ROI:</strong> businesses report an average $8.71 return for every $1 spent on CRM software (widely cited industry figure, originally a Nucleus Research/Salesforce-sponsored study).</li>
+        <li><strong>Faster sales cycles:</strong> CRM use is associated with an 8–14% reduction in sales-cycle length for roughly a third of adopters.</li>
+        <li><strong>Higher lead conversion:</strong> centralized pipeline visibility and automated follow-up are linked to conversion-rate gains that some vendors report as high as 300% versus spreadsheet-based tracking.</li>
+        <li><strong>Better retention:</strong> unified customer history and proactive service workflows are linked to roughly a 27% improvement in customer retention.</li>
+        <li><strong>Data-driven decisions:</strong> real-time pipeline, forecasting and customer-service analytics replace guesswork with dashboards, forecasts and AI-assisted lead scoring.</li>
+        <li><strong>Mobile productivity:</strong> teams using mobile CRM access are reported to be roughly 150% more likely to hit their sales targets.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0;">Benefits customers/end-users experience</h3>
+      <ul>
+        <li><strong>Faster response times:</strong> AI-assisted CRM chatbots and routing are linked to roughly 40% faster customer-service response times.</li>
+        <li><strong>Personalization:</strong> a single customer record (rather than data scattered across email, spreadsheets and call notes) lets support and sales staff respond with full context, not repeated questions.</li>
+        <li><strong>Consistency across channels:</strong> omnichannel CRM means a customer's history is visible whether they contact a company by phone, email, chat or social media.</li>
+        <li><strong>Self-service:</strong> most modern CRMs now bundle knowledge bases and AI chat, letting customers solve simple issues without waiting for a human agent.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="src">Source: SellersCommerce "Top CRM Statistics 2026"; DemandSage/Wave Connect CRM adoption statistics 2026 (figures represent industry-reported averages, not audited studies of a single company — treat as directional benchmarks).</p>
+ 
+  <h3>Why companies specifically need a CRM (the operational case)</h3>
+  <ul>
+    <li><strong>Scaling beyond spreadsheets:</strong> once a sales team exceeds a handful of people, tracking deals and follow-ups in spreadsheets or inboxes breaks down — this is the single biggest driver of CRM adoption at the small-business threshold.</li>
+    <li><strong>Adoption is close to universal at scale:</strong> 91% of companies with 10+ employees use a CRM system, versus only ~50% of businesses under 10 employees — company size is the single largest predictor of CRM adoption, more than industry.</li>
+    <li><strong>Compliance and audit trail:</strong> regulated industries (finance, healthcare, insurance) need a documented, searchable record of every customer interaction.</li>
+    <li><strong>AI-readiness:</strong> a clean, centralized customer database is the prerequisite for using AI features (lead scoring, generative follow-ups, forecasting) — 65% of businesses using CRM with generative AI report being 83% more likely to exceed sales goals.</li>
+  </ul>
+</section>
+ 
+<!-- SECTION 5: COUNTRY DEEP DIVE -->
+<section>
+  <h2>5. Country-Level Demand: India, UK, USA &amp; UAE</h2>
+  <p class="subtitle">Which CRMs are actually in highest demand in each market, and why</p>
+ 
+  <div class="country-header"><span class="flag">🇮🇳</span><h3 style="margin:0;">India</h3></div>
+  <div class="card">
+    <p><strong>Market character:</strong> India is Asia-Pacific's fastest-growing CRM market, driven by SME digitization and a large domestic vendor (Zoho) headquartered in Chennai. Cost sensitivity, GST-compliant invoicing, and Indian-language/data-residency support strongly influence buying decisions.</p>
+    <p><strong>Top CRMs by demand (India):</strong></p>
+    <ol>
+      <li><strong>Zoho CRM</strong> — the #1 CRM by SMB market share in India; native GST/INR support, Chennai-built, and by far the most-installed CRM among Indian small businesses.</li>
+      <li><strong>HubSpot</strong> — strong among India's startup and mid-market SaaS/services sector for its free tier and marketing-sales alignment.</li>
+      <li><strong>Freshsales (Freshworks)</strong> — Chennai-headquartered competitor to Zoho, popular for lighter-weight support+sales bundles.</li>
+      <li><strong>Salesforce</strong> — dominant among large Indian enterprises and companies preparing to raise institutional funding or list publicly, despite its ₹4,000+/user/month entry cost and 2–5 lakh typical implementation cost.</li>
+      <li><strong>Pipedrive</strong> — favoured by small outbound-sales teams for its visual, low-friction pipeline.</li>
+      <li><strong>LeadSquared</strong> — an India-built CRM especially strong in education/ed-tech (coaching institutes) and BFSI vertical sales.</li>
+    </ol>
+    <p class="src">Source: Unstopgrowth "Best CRM Software for Small Business India 2026"; 6sense Zoho CRM market-share data (India = 16.3–16.7% of Zoho's tracked global customer base, its #2 country market after the US).</p>
+  </div>
+ 
+  <div class="country-header"><span class="flag">🇬🇧</span><h3 style="margin:0;">United Kingdom</h3></div>
+  <div class="card">
+    <p><strong>Market character:</strong> valued at roughly £2.9 billion in 2025, the UK CRM market is shaped heavily by GDPR compliance, UK/EU data-residency requirements, and integration with UK accounting platforms like Xero and Sage.</p>
+    <p><strong>Top CRMs by demand (UK):</strong></p>
+    <ol>
+      <li><strong>Salesforce</strong> — dominant in large enterprise and scale-up segments; offers UK/EU data residency via its "Hyperforce" infrastructure for GDPR compliance.</li>
+      <li><strong>HubSpot</strong> — the most disruptive challenger of the last five years in the UK; typically 25–40% lower total cost of ownership than Salesforce for comparable teams, EU data hosting available.</li>
+      <li><strong>Microsoft Dynamics 365</strong> — strong pull among UK enterprises already on Microsoft 365/Teams/Outlook.</li>
+      <li><strong>Zoho CRM</strong> — the UK is Zoho's #3 country market by customer count (behind the US and India), popular with UK SMEs on cost grounds.</li>
+      <li><strong>Pipedrive</strong> — widely used by UK small and mid-size sales teams for its simplicity and price.</li>
+    </ol>
+    <p class="src">Source: viewpointanalysis.com "UK CRM Software Options 2026"; Maximizer "Top 10 Best CRM Software in UK 2026"; 6sense Zoho CRM country breakdowns (UK ≈ 7.6–7.9% of Zoho's tracked customers).</p>
+  </div>
+ 
+  <div class="country-header"><span class="flag">🇺🇸</span><h3 style="margin:0;">United States</h3></div>
+  <div class="card">
+    <p><strong>Market character:</strong> the largest single CRM market in the world (~$22.2B of the ~$39.2B North American total in 2026), and home to nearly every major global CRM vendor's headquarters — Salesforce, HubSpot, Microsoft (Redmond), Oracle, and the U.S. operations of Zoho and Freshworks.</p>
+    <p><strong>Top CRMs by demand (USA):</strong></p>
+    <ol>
+      <li><strong>Salesforce</strong> — the clear #1, with the deepest enterprise penetration (83% of Fortune 500 companies) and highest brand recognition.</li>
+      <li><strong>HubSpot</strong> — dominant in the SMB and inbound-marketing-led segment; the fastest-growing large vendor by customer count.</li>
+      <li><strong>Microsoft Dynamics 365</strong> — strong in mid-market and enterprise, especially manufacturing, finance and healthcare, largely via Microsoft 365 bundling.</li>
+      <li><strong>Zoho CRM</strong> — the US is Zoho's single largest country market, at roughly 47–48% of its tracked customer base across sales-enablement and contact-management categories.</li>
+      <li><strong>Pipedrive</strong> — a leading choice for small and mid-size outbound sales teams (under ~200 reps).</li>
+      <li><strong>Oracle &amp; SAP</strong> — favoured by large enterprises, especially those already running Oracle or SAP ERP systems.</li>
+      <li><strong>monday CRM</strong> and <strong>Freshsales</strong> — growing fast among startups and mid-market teams wanting a lighter-weight, visual alternative to Salesforce.</li>
+    </ol>
+    <p class="src">Source: 6sense "CRM Platforms" market-share aggregation (389,304 of ~825,000 tracked CRM-using companies are US-based — 60.15% of the dataset); Ramp CRM vendor adoption tracker (2026).</p>
+  </div>
+ 
+  <div class="country-header"><span class="flag">🇦🇪</span><h3 style="margin:0;">United Arab Emirates</h3></div>
+  <div class="card">
+    <p><strong>Market character:</strong> the smallest of the four markets in absolute size (UAE sits within a Middle East & Africa region that is ~5% of the global CRM market) but among the fastest-growing, at 10%+ annual growth (2025–2029), driven by Dubai/Abu Dhabi digital-economy initiatives. VAT/FTA e-invoicing compliance, Arabic-language support, and WhatsApp integration (the region's dominant business messaging channel) are decisive local requirements.</p>
+    <p><strong>Top CRMs by demand (UAE):</strong></p>
+    <ol>
+      <li><strong>Zoho CRM</strong> — the leading choice for UAE SMEs; offers full right-to-left Arabic support, native Zoho Books integration for FTA-compliant VAT/Corporate Tax tracking, and typical implementation from as little as AED 3,500.</li>
+      <li><strong>Salesforce</strong> — the standard choice for large UAE enterprises with complex, multi-team sales operations; Salesforce has committed USD 500 million to expand its regional presence including a new Dubai headquarters. Typical implementation cost rarely falls below AED 25,000.</li>
+      <li><strong>HubSpot</strong> — a common mid-tier choice; entry pricing around AED 75 (~$20)/user/month, implementation from about AED 8,000.</li>
+      <li><strong>Microsoft Dynamics 365</strong> — favoured by large enterprises, particularly those in banking, government-adjacent, and industries already standardized on Microsoft infrastructure.</li>
+      <li><strong>NetSuite CRM (Oracle)</strong> — the strongest option for mid-market/enterprise companies wanting CRM, ERP and financials in a single system.</li>
+      <li><strong>Regional/local platforms</strong> (e.g., CorporateStack, Zarina CRM) — chosen specifically for UAE regulatory compliance and Arabic-first design where global platforms feel like a translation layer rather than a native fit.</li>
+    </ol>
+    <p class="src">Source: Azdan "20 Best CRM Software in UAE"; skimbox.co "CRM Implementation in the UAE: Zoho vs HubSpot vs Salesforce 2026"; Gulfalts "Selecting the Best CRM Software for Enterprise in Dubai"; Market Research Future MEA CRM regional data.</p>
+  </div>
+ 
+  <div class="chart-box">
+    <canvas id="countryChart"></canvas>
+  </div>
+  <p class="src">Illustrative ranking of demand-share, synthesized from the country sections above (not a single unified analyst dataset — treat as directional, not a precise percentage market share).</p>
+</section>
+ 
+<!-- SECTION 6: SOURCES -->
+<section>
+  <h2>6. Sources &amp; References</h2>
+  <p class="subtitle">Every figure in this report traces to one of the following (accessed 2026)</p>
+  <ul class="refs">
+    <li>Fortune Business Insights — Customer Relationship Management (CRM) Market: <a href="https://www.fortunebusinessinsights.com/customer-relationship-management-crm-market-103418">fortunebusinessinsights.com/customer-relationship-management-crm-market-103418</a></li>
+    <li>Gartner — Market Share: Customer Experience and Relationship Management, Worldwide, 2024: <a href="https://www.gartner.com/en/documents/6582102">gartner.com/en/documents/6582102</a></li>
+    <li>Gartner — Market Share Analysis: CRM Sales, Worldwide, 2024: <a href="https://www.gartner.com/en/documents/6791434">gartner.com/en/documents/6791434</a></li>
+    <li>Gartner — Market Share: Enterprise Application Software as a Service, Worldwide, 2024: <a href="https://www.gartner.com/en/documents/6526202">gartner.com/en/documents/6526202</a></li>
+    <li>Wikipedia — Salesforce, HubSpot, Zoho Corporation, Freshworks, Pipedrive, Monday.com (company infoboxes: founding dates, founders, revenue, employees)</li>
+    <li>G2.com — product review pages for Salesforce, Zoho CRM, Dynamics 365 Sales, Pipedrive, monday CRM, Zendesk (star ratings and review counts)</li>
+    <li>technologychecker.io — "Salesforce Statistics, Trends, Insights and Market Share 2026" &amp; "Companies Using Zoho CRM in 2026"</li>
+    <li>6sense.com — Zoho CRM market-share &amp; country-breakdown pages (sales-enablement, sales-management, contact-management categories); "CRM Platforms" category aggregation</li>
+    <li>commandlinux.com — "CRM Market Share 2026: Salesforce vs HubSpot vs Zoho" (statistics reference page)</li>
+    <li>bayelsawatch.com — "Zoho CRM Statistics By Market Share And Usage (2026)"</li>
+    <li>wavecnct.com — "CRM Statistics 2026: 80+ Facts and Data"</li>
+    <li>sellerscommerce.com — "Top CRM Statistics You Need To Know In 2026"</li>
+    <li>unstopgrowth.com — "Best CRM Software for Small Business India 2026"</li>
+    <li>viewpointanalysis.com — "UK CRM Software Options 2026"</li>
+    <li>maximizer.com — "Top 10 Best CRM Software in United Kingdom (UK) in 2026"</li>
+    <li>azdan.com — "20 Best CRM Software in UAE"</li>
+    <li>skimbox.co — "CRM Implementation in the UAE: Zoho vs HubSpot vs Salesforce in 2026"</li>
+    <li>gulfalts.com — "Selecting the Best CRM Software for Enterprise in Dubai"</li>
+    <li>marketresearchfuture.com — "CRM Software Market Size, Share & Growth Report 2035"</li>
+    <li>deccanfounders.com — "ZOHO: The Inspiring Journey of Sridhar Vembu"</li>
+    <li>productgrowth.in — "Zoho CRM Review 2026" &amp; "Pipedrive Review 2026" company-overview pages</li>
+    <li>escalon.services &amp; salesforce.com/news — "The History of Salesforce" (founding story)</li>
+    <li>hubspot.com/our-story &amp; sequoiacap.com podcast — HubSpot founding story</li>
+    <li>entreecap.com &amp; monday.com/p/about — monday.com founding story</li>
+    <li>eesel.ai &amp; learn.g2.com — Zendesk review and G2 statistics (2026)</li>
+  </ul>
+</section>
+ 
+</div>
+ 
+<footer>
+  Compiled September 2026 from publicly available analyst, review-platform, and company-disclosed data. Market-share and revenue figures vary by tracking methodology (see Section 1 note) — figures here represent the most recent publicly reported numbers at time of research, not audited or guaranteed-current data. For procurement decisions, verify current pricing directly with each vendor.
+</footer>
+ 
+<script>
+const navy = '#0f2c4c';
+const teal = '#0d9488';
+const tealLight = '#5eead4';
+const navyLight = '#4a6fa1';
+const grey = '#94a3b8';
+ 
+Chart.defaults.font.family = "'Segoe UI', Arial, sans-serif";
+Chart.defaults.color = '#334155';
+ 
+/* --- FIX: shared options object every chart merges in ---
+   maintainAspectRatio:false lets the chart fill the fixed-height
+   .chart-box wrapper instead of computing its own ratio (the loop
+   that was making things shrink/move). resizeDelay debounces the
+   ResizeObserver so charts don't jitter while the page settles. */
+const stableBase = {
+  responsive: true,
+  maintainAspectRatio: false,
+  resizeDelay: 100,
+  animation: { duration: 400 }
+};
+ 
+// 1. Market growth line chart
+new Chart(document.getElementById('marketGrowthChart'), {
+  type: 'line',
+  data: {
+    labels: ['2024', '2025', '2026 (proj.)', '2034 (proj.)'],
+    datasets: [{
+      label: 'Global CRM Market Size (USD Billion)',
+      data: [101.41, 112.91, 126.17, 320.99],
+      borderColor: teal,
+      backgroundColor: 'rgba(13,148,136,0.12)',
+      fill: true,
+      tension: 0.3,
+      pointBackgroundColor: navy,
+      pointRadius: 5,
+      borderWidth: 3
+    }]
+  },
+  options: {
+    ...stableBase,
+    plugins: { legend: { display: false }, title: { display: true, text: 'Global CRM Market Size, 2024–2034 (USD Billion)', color: navy, font:{size:14,weight:'bold'} } },
+    scales: { y: { beginAtZero: true, title:{display:true, text:'USD Billion'} } }
+  }
+});
+ 
+// 2. Regional split
+new Chart(document.getElementById('regionChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['North America (31.7%)', 'Asia-Pacific (~27%)', 'Europe (~22.6%)', 'Middle East, Africa & Rest (~18.7%)'],
+    datasets: [{
+      data: [31.7, 27, 22.6, 18.7],
+      backgroundColor: [navy, teal, navyLight, tealLight],
+      borderWidth: 2,
+      borderColor: '#fff'
+    }]
+  },
+  options: {
+    ...stableBase,
+    plugins: { title: { display: true, text: '2026 Global CRM Revenue by Region', color: navy, font:{size:14,weight:'bold'} }, legend:{position:'bottom'} }
+  }
+});
+ 
+// 3. Vendor market share
+new Chart(document.getElementById('vendorShareChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Salesforce', 'Microsoft', 'Adobe', 'SAP', 'Oracle', 'All other vendors (fragmented)'],
+    datasets: [{
+      label: 'Global CRM Market Share (%)',
+      data: [20.7, 5.9, 5.5, 4.8, 4.4, 58.7],
+      backgroundColor: [teal, navy, navyLight, navyLight, navyLight, grey]
+    }]
+  },
+  options: {
+    ...stableBase,
+    indexAxis: 'y',
+    plugins: { legend: { display: false }, title: { display: true, text: 'Global CRM Vendor Market Share, 2024–2025 (IDC / Gartner)', color: navy, font:{size:14,weight:'bold'} } },
+    scales: { x: { beginAtZero: true, max:65, title:{display:true,text:'% of global CRM revenue'} } }
+  }
+});
+ 
+// 4. G2 rating comparison
+new Chart(document.getElementById('g2RatingChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Salesforce', 'HubSpot (Sales Hub)', 'Zoho CRM', 'Dynamics 365 Sales', 'Pipedrive', 'Freshsales', 'monday CRM'],
+    datasets: [{
+      label: 'G2 Star Rating (out of 5)',
+      data: [4.5, 4.4, 4.1, 3.8, 4.6, 4.5, 4.6],
+      backgroundColor: teal
+    }]
+  },
+  options: {
+    ...stableBase,
+    plugins: { legend: { display:false }, title: { display: true, text: 'G2 Verified User Ratings by Platform (2026)', color: navy, font:{size:14,weight:'bold'} } },
+    scales: { y: { min:3, max:5, title:{display:true,text:'Stars (out of 5)'} } }
+  }
+});
+ 
+// 5. Entry pricing comparison
+new Chart(document.getElementById('entryPriceChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Zoho CRM', 'Pipedrive', 'Freshsales', 'monday CRM', 'HubSpot Starter', 'Salesforce Starter', 'Dynamics 365 Sales'],
+    datasets: [{
+      label: 'Entry-level paid tier (USD / user / month)',
+      data: [14, 14, 15, 12, 20, 25, 65],
+      backgroundColor: navy
+    }]
+  },
+  options: {
+    ...stableBase,
+    plugins: { legend:{display:false}, title: { display: true, text: 'Entry-Level Paid Pricing Comparison (USD/user/month, 2026)', color: navy, font:{size:14,weight:'bold'} } },
+    scales: { y: { beginAtZero:true, title:{display:true,text:'USD per user / month'} } }
+  }
+});
+ 
+// 6. Country demand illustrative chart
+new Chart(document.getElementById('countryChart'), {
+  type: 'bar',
+  data: {
+    labels: ['India', 'United Kingdom', 'USA', 'UAE'],
+    datasets: [
+      { label: 'Zoho CRM', data: [1, 3, 4, 1], backgroundColor: teal },
+      { label: 'Salesforce', data: [4, 1, 1, 2], backgroundColor: navy },
+      { label: 'HubSpot', data: [2, 2, 2, 3], backgroundColor: navyLight },
+      { label: 'Microsoft Dynamics 365', data: [6, 3, 3, 4], backgroundColor: grey }
+    ]
+  },
+  options: {
+    ...stableBase,
+    plugins: {
+      title: { display: true, text: 'Illustrative Rank Position by Country (1 = highest demand)', color: navy, font:{size:14,weight:'bold'} },
+      legend: { position: 'bottom' }
+    },
+    scales: { y: { reverse: true, min:0, max:7, title:{display:true, text:'Rank (lower = higher demand)'} } }
+  }
+});
+</script>
+ 
+</body>
+</html>
+ 
