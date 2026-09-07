@@ -11,7 +11,8 @@
 <br/>
 
 ---
-
+<div align="left">
+ 
 ## Headline Findings
 
 | Metric | Value | Source |
