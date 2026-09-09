@@ -2,8 +2,6 @@
  
 # Global CRM Market Research Report 2026
 
-<br/>
-
 ---
 
 <div align="left">
