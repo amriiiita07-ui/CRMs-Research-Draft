@@ -6,7 +6,7 @@
 
 [![Live Report](https://img.shields.io/badge/🔗_Live_Report-cr--ms--research--draft.vercel.app-1F3A93)](https://cr-ms-research-draft.vercel.app/)
 [![Data Policy](https://img.shields.io/badge/data-100%25_sourced-16A085)](https://cr-ms-research-draft.vercel.app/)
-[![Markets Covered](https://img.shields.io/badge/markets-🇮🇳_🇬🇧_🇺🇸_🇦🇪-E8A33D)](https://cr-ms-research-draft.vercel.app/)
+[![Markets Covered](https://img.shields.io/badge/markets-India-USA-UAE-UK-E8A33D)](https://cr-ms-research-draft.vercel.app/)
 
 <br/>
 
