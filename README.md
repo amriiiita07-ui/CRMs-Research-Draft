@@ -4,7 +4,7 @@
 
 > A fully-sourced competitive research report on the **Customer Relationship Management (CRM) software industry**, covering the **Top 10 CRM platforms**, **market analytics**, and **country-level demand in India, UK, USA & UAE** built with 100% real-world data. Every figure traces to a named public source: Gartner, IDC, Fortune Business Insights, G2, Capterra, company filings (10-Ks), and official vendor pages.
 
-[![Live Report](https://img.shields.io/badge/🔗_Live_Report-cr--ms--research--draft.vercel.app-1F3A93)](https://cr-ms-research-draft.vercel.app/)
+[![Live Report](https://img.shields.io/badge/Live_Report-cr--ms--research--draft.vercel.app-1F3A93)](https://cr-ms-research-draft.vercel.app/)
 [![Data Policy](https://img.shields.io/badge/data-100%25_sourced-16A085)](https://cr-ms-research-draft.vercel.app/)
 [![Markets Covered](https://img.shields.io/badge/markets-India_|_USA_|_UAE_|_UK-E8A33D)](https://cr-ms-research-draft.vercel.app/)
 
