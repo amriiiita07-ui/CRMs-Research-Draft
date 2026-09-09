@@ -2,9 +2,17 @@
  
 # Global CRM Market Research Report 2026
 
+<br/>
+
+---
+
 <div align="left">
 
 A fully-sourced competitive research report on the **Customer Relationship Management (CRM) software industry**, covering the **Top 10 CRM platforms**, **market analytics**, and **country-level demand in India, UK, USA & UAE** built with 100% real-world data. Every figure traces to a named public source: Gartner, IDC, Fortune Business Insights, G2, Capterra, company filings (10-Ks), and official vendor pages.
+
+<br/>
+
+---
 
 <div align="center">
  
